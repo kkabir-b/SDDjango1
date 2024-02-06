@@ -7,6 +7,7 @@ class Person(models.Model):
 
     luck = models.IntegerField()
     age = models.IntegerField(blank=False, null=True)
+    would_you_win = models.BooleanField()
 
 class TeachingGroup(models.Model):
     name = models.CharField(max_length=30, null=True)
