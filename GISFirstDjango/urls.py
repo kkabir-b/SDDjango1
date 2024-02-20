@@ -21,4 +21,5 @@ from GISFirstDjango.views import splash
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', splash)
+    #path('people',test)
 ]
