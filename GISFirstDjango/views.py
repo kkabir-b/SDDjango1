@@ -5,4 +5,5 @@ def splash(request):
     name = '2'
     people = Person.objects.all()
     debug_people = list(people)
-    return render(request, "splash.html", {'name': name})
+    lst = ['a','b','c']
+    return render(request, "splash.html", {'lst': lst,'name':name})

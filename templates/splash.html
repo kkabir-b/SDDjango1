@@ -2,8 +2,12 @@
 <head>
     <title>Landing page</title>
 </head>
-
 <body>
 <h1>Welcome to my Django site, {{ name }}!</h1>
+<ul>
+    {% for a in lst %}
+    <li>{{a}}</li>
+    {% endfor %}
+</ul>
 </body>
 </html>
