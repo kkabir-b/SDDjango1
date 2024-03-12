@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo App</title>
-    <link rel="stylesheet" href="{% static 'styles.css' %}">
 </head>
 <body>
     <div class="container">
         <h1>Todo List</h1>
-        <form method="POST" action="{% url 'add_todo' %}">
+        <!--<form method="POST" action="{% url 'add_todo' %}">-->
             {% csrf_token %}
             <input type="text" name="todo_text" placeholder="Add a new todo">
             <button type="submit">Add</button>
