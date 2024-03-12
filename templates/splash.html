@@ -3,9 +3,15 @@
     <title>Landing page</title>
 </head>
 <body>
-<h1>Welcome to my Django site, {{ name }}!</h1>
+<h1>To do list!</h1>
 <ul>
+    <h2>To do tasks</h2>
     {% for a in lst %}
+    <li>{{a}}</li>
+    {% endfor %}
+
+    <h2>Tasks done</h2>
+    {% for a in done %}
     <li>{{a}}</li>
     {% endfor %}
 </ul>
