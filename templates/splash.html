@@ -4,7 +4,10 @@
 <body>
     <div class="container">
         <h1>Todo List {{ name }}</h1>
-
+        <form>
+            <input type="text" name="todo_text" placeholder="Add a new todo">
+            <button type="submit">Add</button>
+        </form>
         <ul class="todo-list">
             {% for todo in todos %}
             <li>{{ todo }}</li>
